@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@import 'variables';  
+@import 'main';
+@import 'nav';
+@import 'services';
+@import 'portfolio';
+@import 'team';
+@import 'contact';

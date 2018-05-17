@@ -1,0 +1,41 @@
+/* Responsive */
+
+@media all and (max-width: 991px) {
+
+    #main-header {
+        .header-pretitle {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    #main-nav {
+        background: rgba(34, 34, 34, 0.7);
+
+        .navbar-brand {
+            font-size: 20px;
+            padding-right: 0px;
+        }
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    
+    .footer-text {
+        text-align: center!important;
+    }
+    
+    #contact {
+
+        form {
+            .input-style {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}

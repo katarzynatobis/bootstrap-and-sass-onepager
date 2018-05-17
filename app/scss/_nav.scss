@@ -1,0 +1,75 @@
+#main-nav {
+    transition: $transition;
+    padding-top: 30px;
+
+    .nav-item {
+        a {
+            color: #fff;
+            padding-right: 30px;
+
+            &:hover {
+                color: $cyan-color;
+            }
+        }
+    }
+
+    .navbar-brand {
+        font-family: 'Lora', serif;
+        font-size: 26px;
+        color: #fff;
+    }
+
+    .navbar-collapse {
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: flex-end;
+    }
+
+    &.navbar-background {
+        background-color: rgba(14, 216, 214, .7);
+        padding-top: 8px;
+
+        .nav-item {
+            a {
+                &:hover {
+                    color: $gray-color;
+                }
+            }
+        }
+    }
+}
+
+.navbar-light {
+    .navbar-toggler {
+        border-color: #fff;
+    }
+
+    .navbar-toggler-icon {
+        border-color: #fff;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
+
+#main-header {
+    height: 100vh;
+    min-height: 550px;
+    background-image: url("../img/header/pictures_on_the_wall.jpg");
+    @include bg-image;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/header/pictures_on_the_wall.jpg");
+    @include display-flex(column, center, center);
+    color: #fff;
+
+    .header-pretitle {
+        font-family: 'Lora', serif;
+        font-size: 45px;
+        margin: 0;
+        color: #fff;
+    }
+
+    h1 {
+        padding: 15px 0 45px 0;
+        margin: 0;
+        font-size: 75px;
+        font-weight: bold;
+    }
+}

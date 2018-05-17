@@ -1,0 +1,22 @@
+#services {
+    .fa {
+        width: 100px;
+        line-height: 100px;
+        font-size: 56px;
+        background-color: $cyan-color;
+        margin-bottom: 30px;
+        border: 3px solid transparent;
+
+        &:hover {
+            border-color: $cyan-color;
+            transform: rotate(360deg);
+            color: $cyan-color;
+            background-color: #fff;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
